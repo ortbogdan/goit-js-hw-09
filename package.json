@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://ortbogdan.github.io/goit-js-hw-09/",
   "scripts": {
-    "dev": "parcel src/*index.html",
+    "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-09/"
   },
   "repository": {
@@ -22,5 +22,7 @@
     "posthtml-include": "^1.7.2",
     "sass": "^1.43.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "flatpickr": "^4.6.9"
+  }
 }
