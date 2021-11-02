@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/01-color-switcher.js"],"names":["startBtnRef","document","querySelector","console","log"],"mappings":";AAAA,MAAMA,EAAcC,SAASC,cAAc,sBAC3CC,QAAQC,IAAIJ","file":"01-color-switcher.7d81df58.js","sourceRoot":"../src","sourcesContent":["const startBtnRef = document.querySelector('button[data-start]')\nconsole.log(startBtnRef)\n"]}
