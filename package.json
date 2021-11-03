@@ -23,6 +23,7 @@
     "sass": "^1.43.4"
   },
   "dependencies": {
-    "flatpickr": "^4.6.9"
+    "flatpickr": "^4.6.9",
+    "notiflix": "^3.1.0"
   }
 }
