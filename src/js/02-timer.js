@@ -1,6 +1,6 @@
 // Описан в документации
 import flatpickr from 'flatpickr';
-import Notiflix from 'notiflix';
+import {Notify} from 'notiflix';
 // Дополнительный импорт стилей
 import 'flatpickr/dist/flatpickr.min.css';
 
@@ -25,7 +25,7 @@ flatpickr('#datetime-picker', {
         onClose(selectedDates) {
             selectedTime = selectedDates[0].getTime();
             if (selectedTime <= Date.now()) { 
-                Notiflix.Notify.failure("Please choose a date in the future");
+                Notify.failure("Please choose a date in the future");
                 return;
             }
             startBtnRef.removeAttribute('disabled');

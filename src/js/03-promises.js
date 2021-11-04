@@ -31,7 +31,6 @@ formRef.addEventListener('submit',  onSubmitcreatePromises)
   promises.push(createPromise(i, delay));
   delay += step;
   }
-  console.log(promises)
   promises.forEach(promise => { promise.then(({ position, delay }) => {
     Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
     })
