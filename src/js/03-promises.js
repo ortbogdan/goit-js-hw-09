@@ -25,18 +25,14 @@ formRef.addEventListener('submit',  onSubmitcreatePromises)
     const step = Number(stepRef.value);
     const amount = Number(amountRef.value);
     
-    const promises = [];
-    
   for (let i = 1; i <= amount; i+=1) {
-  promises.push(createPromise(i, delay));
-  delay += step;
-  }
-  promises.forEach(promise => { promise.then(({ position, delay }) => {
+  createPromise(i, delay).then(({ position, delay }) => {
     Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
     })
     .catch(({ position, delay }) => {
       Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
      });
-    })
+     delay += step;
+  }
   }
  
